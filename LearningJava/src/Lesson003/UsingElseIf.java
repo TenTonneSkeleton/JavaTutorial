@@ -1,7 +1,6 @@
-package Lesson3;
+package Lesson003;
 
 import javax.swing.*;
-import java.awt.font.ImageGraphicAttribute;
 
 public class UsingElseIf {
     public static void main(String[] args) {

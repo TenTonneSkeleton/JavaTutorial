@@ -1,4 +1,4 @@
-package Lesson8;
+package Lesson008;
 
 import javax.swing.JOptionPane;
 import java.lang.Math;

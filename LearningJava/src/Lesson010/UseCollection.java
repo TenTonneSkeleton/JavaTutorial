@@ -1,4 +1,4 @@
-package Lesson10;
+package Lesson010;
 
 import javax.swing.*;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package Lesson6;
+package Lesson006;
 import javax.swing.*;
 public class UsingFor {
     public static void main(String[] args) {

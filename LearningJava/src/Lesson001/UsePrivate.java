@@ -1,4 +1,4 @@
-package Lesson1;
+package Lesson001;
 
 class MyClass {
     private static int count = 0;
