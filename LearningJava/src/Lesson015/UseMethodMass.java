@@ -10,9 +10,22 @@ public class UseMethodMass {
         }
         System.out.println();
     }
+    static void B(int[] massB){
+        for (int i = 0; i <massB.length ; i++) {
+            System.out.print(massB[i]+"\t");
+        }
+        System.out.println();
+    }
 
-    static void B(int[] MassB){
-
+    static void C(int[][] massA, int[] massB){
+        int[] massC = new int[massA.length];
+        for (int i = 0; i <massA.length; i++) {
+            for (int j = 0; j <massA[i].length; j++) {
+                massC[i]+=massA[i][j]*massB[i];
+            }
+            System.out.print(massC[i]+"\t");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -21,6 +34,9 @@ public class UseMethodMass {
         System.out.println("Massive A:");
         A(massA);
         System.out.println("Massive B:");
-        A(massB);
+        B(massB);
+        System.out.println("Massive C:");
+        C(massA, massB);
+
     }
 }
