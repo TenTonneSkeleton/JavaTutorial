@@ -4,10 +4,10 @@ public class CountingSheep {
     public static int countSheeps(Boolean[] arrayOfSheeps) { //Boolean - true, false, null // boolean true, false
         int sum=0;
         for (int i = 0; i < arrayOfSheeps.length; i++) {
-            if (arrayOfSheeps[i]==true) {
-                sum+=1;
-            } else if (arrayOfSheeps[i] == null) {
+            if (arrayOfSheeps[i] == null) {
                 sum+=0;
+            } else if (arrayOfSheeps[i]==true) {
+                sum+=1;
             }
         }
         return sum;
@@ -24,3 +24,28 @@ public class CountingSheep {
 
     }
 }
+
+/* Variant 1
+public class Counter {
+  public int countSheeps(Boolean[] arrayOfSheeps) {
+    int counter = 0;
+    for (Boolean present : arrayOfSheeps) {
+      if (present != null && present) {
+        counter += 1;
+      }
+    }
+    return counter;
+  }
+}
+ */
+
+/* Variant 2
+import java.util.Arrays;
+import java.util.Collections;
+
+public class Counter {
+  public int countSheeps(Boolean[] arrayOfSheeps) {
+    return Collections.frequency(Arrays.asList(arrayOfSheeps), true);
+  }
+}
+ */
