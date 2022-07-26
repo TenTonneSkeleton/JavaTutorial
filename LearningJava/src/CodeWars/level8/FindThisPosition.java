@@ -24,3 +24,15 @@ public class FindThisPosition {
 
     }
 }
+
+/* Variant 1
+    public class Kata
+    {
+      public static String position(char alphabet)
+      {
+        return "Position of alphabet: " + ((int) alphabet - 96);        //Латинская буква принимает целочисленное значение начиная с 97, пример: a = 97, e = 101
+      }
+    }
+ */
+
+/*
