@@ -33,6 +33,5 @@ public class FindThisPosition {
         return "Position of alphabet: " + ((int) alphabet - 96);        //Латинская буква принимает целочисленное значение начиная с 97, пример: a = 97, e = 101
       }
     }
- */
 
-/*
+ */

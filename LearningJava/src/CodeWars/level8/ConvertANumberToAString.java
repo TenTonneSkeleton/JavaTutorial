@@ -2,8 +2,8 @@ package CodeWars.level8;
 
 public class ConvertANumberToAString {
     public static String numberToString(int num) {
-        String s = "";
-        return s += num;
+        String s = "" + num;
+        return s;
     }
 
     public static void main(String[] args) {
